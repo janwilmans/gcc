@@ -1,0 +1,9 @@
+Package: gcc-VERSION
+Priority: optional
+Version: VERSION-BUILD
+Section: misc
+Architecture: amd64
+Maintainer: https://github.com/janwilmans/gcc
+Homepage: https://gcc.gnu.org/releases.html
+Installed-Size: SIZE
+Description: GCC, the GNU Compiler Collection, sanitizer patch, see https://github.com/janwilmans/gcc/issues/1

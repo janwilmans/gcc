@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "/opt/gcc-SHORT_VERSION/lib64" > /etc/ld.so.conf.d/gcc-SHORT_VERSION.conf
+ldconfig
+
+update-alternatives --install /usr/bin/cc cc /opt/gcc-SHORT_VERSION/bin/gcc-SHORT_VERSION 60
+update-alternatives --install /usr/bin/gcc gcc /opt/gcc-SHORT_VERSION/bin/gcc-SHORT_VERSION 60
+update-alternatives --install /usr/bin/c++ c++ /opt/gcc-SHORT_VERSION/bin/g++-SHORT_VERSION 60
+update-alternatives --install /usr/bin/g++ g++ /opt/gcc-SHORT_VERSION/bin/g++-SHORT_VERSION 60
+

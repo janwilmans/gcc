@@ -3,20 +3,7 @@
 script_dir=$(realpath $(dirname $0))
 prerequisites_dir=${script_dir}/prerequisites
 
-VERSION_PREFIX=
-VERSION=14.2.0
-VERSION_SUFFIX=
-BUILD=2
-
-SRCDIR=gcc
-PKGNAME=gcc
-
-APTLY_REPO=janwilmans-debian12
-
-# glibc version is obtained from the compilation enviroment using `ldd --version`
-APTLY_REPO_REASON="gcc-14.2 build for Debian 12 (bookworm) (Debian GLIBC 2.36-9+deb12u9) 2.36"
-
-SHORT_VERSION=$( echo "${VERSION}" | sed 's/\.[0-9]*$//' )
+. version.sh
 
 rm -rf debian
 mkdir debian

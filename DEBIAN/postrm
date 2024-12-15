@@ -1,0 +1,10 @@
+#!/bin/sh
+
+rm -f /etc/ld.so.conf.d/gcc-SHORT_VERSION.conf
+ldconfig
+
+update-alternatives --remove cc /opt/gcc-SHORT_VERSION/bin/gcc-SHORT_VERSION
+update-alternatives --remove gcc /opt/gcc-SHORT_VERSION/bin/gcc-SHORT_VERSION
+update-alternatives --remove c++ /opt/gcc-SHORT_VERSION/bin/g++-SHORT_VERSION 
+update-alternatives --remove g++ /opt/gcc-SHORT_VERSION/bin/g++-SHORT_VERSION
+
