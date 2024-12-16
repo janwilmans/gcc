@@ -5,5 +5,7 @@ gcc builds for specific platforms
 ## initial relelase
 
 - gcc 14.2 for debian 12
-    - patch for sanitizers apply to continue when RTLD_DEEPBIND
 
+## patch build 2
+
+- patch for sanitizers applied to continue when RTLD_DEEPBIND is used to load a library
