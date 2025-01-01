@@ -5,6 +5,8 @@ prerequisites_dir=${script_dir}/prerequisites
 
 . version.sh
 
+SHORT_VERSION=$( echo "${VERSION}" | sed 's/\.[0-9]*$//' )
+
 rm -rf debian
 mkdir debian
 
